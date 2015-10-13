@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.hittest2.Main2Activity">
+
+
+    <Button
+        android:id="@+id/button_tap"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:text="Tap"
+        android:onClick="addScore"
+        android:textSize="32sp"
+        android:background="#F44336" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Score: 0"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:onClick="tapjuan"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:text="Start"
+        android:textSize="32sp"
+        android:background="#4CAF50"
+        android:layout_alignTop="@+id/button_tap"
+        android:layout_alignLeft="@+id/button_tap"
+        android:layout_alignStart="@+id/button_tap" />
+
+    <TextView
+        android:id="@+id/text_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@android:color/transparent"
+        android:text="00"
+        android:textColor="#000"
+        android:textSize="188sp"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/text_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Life:  3"
+        android:textSize="36sp" />
+
+
+</RelativeLayout>
